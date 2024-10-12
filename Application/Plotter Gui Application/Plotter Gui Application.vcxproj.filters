@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Engine\Main Engine">
+      <UniqueIdentifier>{5f1d1ed4-10ff-4d9f-bc3a-949b643a31cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Main Engine\Customizable">
+      <UniqueIdentifier>{fa7f51ee-7df7-48bb-9e87-727ff966cdc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Main Engine\Source Files">
+      <UniqueIdentifier>{a50b0229-5106-4267-aeba-72df8f28089b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Main Engine\Header Files">
+      <UniqueIdentifier>{e4e71e16-83c2-4859-a04a-9d4d2629f3b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Plotter\Source Files">
+      <UniqueIdentifier>{9e568030-2e89-49e7-92d0-ea592676e1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter\Source Files\Objects">
+      <UniqueIdentifier>{1075642c-b260-4249-a94d-3b3a9f445f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter\Source Files\Shaders">
+      <UniqueIdentifier>{c0f1a56b-4fe5-4b09-88c2-df70a27fb51e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter\Header Files">
+      <UniqueIdentifier>{b8f0aa4b-d991-43e4-bf25-3ab2918dde65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter\Header Files\Objects">
+      <UniqueIdentifier>{37c115f4-844d-4d2a-a03b-3419528358c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter\Header Files\Objects\SVGElements">
+      <UniqueIdentifier>{4dc02eea-3c97-441d-ac62-a1956073296d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plotter\Source Files\Objects\SVGElements">
+      <UniqueIdentifier>{6914ce38-65ab-4f9c-b3ef-10f1e81729cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Imgui">
+      <UniqueIdentifier>{249d23c5-ddd0-4c22-8ef1-b006907ad026}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Arm.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderTypes.h">
+      <Filter>Engine\Main Engine\Customizable</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgramTypes.h">
+      <Filter>Engine\Main Engine\Customizable</Filter>
+    </ClInclude>
+    <ClInclude Include="VaoTypes.h">
+      <Filter>Engine\Main Engine\Customizable</Filter>
+    </ClInclude>
+    <ClInclude Include="Updater.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseClasses.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderController.h">
+      <Filter>Engine\Main Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fullScreenVert.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SVGController.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="PolyLine.h">
+      <Filter>Plotter\Header Files\Objects\SVGElements</Filter>
+    </ClInclude>
+    <ClInclude Include="SVGElementBase.h">
+      <Filter>Plotter\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Linkage.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="selectionRect.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Plotter.h">
+      <Filter>Plotter\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialController.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\implot.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\implot_internal.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imstb_rectpack.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imstb_textedit.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imstb_truetype.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imconfig.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imgui.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imgui_impl_glfw.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imgui_impl_opengl3.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imgui_internal.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\imgui\imgui_stdlib.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneController.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Arm.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="vaoInit.cpp">
+      <Filter>Engine\Main Engine\Customizable</Filter>
+    </ClCompile>
+    <ClCompile Include="Plotter.cpp">
+      <Filter>Plotter\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shadersInit.cpp">
+      <Filter>Engine\Main Engine\Customizable</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine\Main Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>Engine\Main Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Engine\Main Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderController.cpp">
+      <Filter>Engine\Main Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Updater.cpp">
+      <Filter>Engine\Main Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SVGController.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="PolyLine.cpp">
+      <Filter>Plotter\Source Files\Objects\SVGElements</Filter>
+    </ClCompile>
+    <ClCompile Include="Linkage.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="selectionRect.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Engine\Main Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_tables.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_widgets.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\implot.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\implot_demo.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\implot_items.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_demo.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_draw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_impl_glfw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_impl_opengl3.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\imgui\imgui_stdlib.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\glad.c">
+      <Filter>Plotter</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialController.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Plotter\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneController.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleVertShader.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+    <None Include="simpleFragShader.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+    <None Include="GridFragShader.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+    <None Include="absQuadVert.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+    <None Include="validAreaFrag.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+    <None Include="texturedQuadVert.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+    <None Include="texturedQuadFrag.glsl">
+      <Filter>Plotter\Source Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
