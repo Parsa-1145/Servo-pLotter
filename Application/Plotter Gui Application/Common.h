@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include<imgui_stdlib.h>
 #include<implot.h>
+#include<queue>
 
 using std::cout;
 using std::endl;

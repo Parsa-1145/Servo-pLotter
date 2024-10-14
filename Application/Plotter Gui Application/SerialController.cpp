@@ -1,5 +1,6 @@
 #include "SerialController.h"
 #include "Linkage.h"
+#include "Globals.h"
 SerialControllerNS::Idle idle;
 SerialControllerNS::SerialController::SerialController(Engine* engine, PlotterApp* plotterApp, int baud){
 	this->baudRate = baud;
@@ -69,8 +70,40 @@ void SerialControllerNS::SerialController::executeCode(std::string code){
 	}
 }
 
+void SerialControllerNS::SerialController::execute(std::string str){
+
+}
+
+void SerialControllerNS::SerialController::sendMessages(){
+	serialOutMutex.lock();
+	while (this->messageQueue.size() != 0) {
+		this->serialConnection->write(this->messageQueue.front());
+		this->messageQueue.pop();
+	}
+	serialOutMutex.unlock();
+}
+
 void SerialControllerNS::Idle::update(float deltaTime){
-	
+	SerialController* con = this->serialController;
+	if (con->connected) {
+		while (con->serialConnection->available()) {
+			con->inChar = con->serialConnection->read(1)[0];
+			switch (con->inChar){
+			case '\n':
+				con->sendMessages();
+				con->parse(con->inStr);
+				con->inStr = "";
+				break;
+			case '\t':
+				con->parse(con->inStr);
+				con->inStr = "";
+				break;
+			default:
+				con->inStr += con->inChar;
+				break;
+			}
+		}
+	}
 }
 
 void SerialControllerNS::Idle::render() {

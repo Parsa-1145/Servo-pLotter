@@ -22,11 +22,19 @@ namespace SerialControllerNS {
 		serial::PortInfo port;
 		bool connected = false;
 		std::string connectionStatus;
+		std::queue<std::string> messageQueue;
+
+		char inChar;
+		std::string inStr;
+
+		int state;
 
 		SerialController(Engine* engine, PlotterApp* plotterApp, int baud);
 		~SerialController();
 
 		void update();
 		void executeCode(std::string code);
+		void parse(std::string str);
+		void sendMessages();
 	};
 }
