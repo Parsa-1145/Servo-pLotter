@@ -1,7 +1,53 @@
 #include "Engine.h"
+ImGuiKey glfwToImguiKey(int key) {
+	switch (key){
+	case 48:
+		return ImGuiKey_0;
+		break;
+	case 49:
+		return ImGuiKey_1;
+		break;
+	case 50:
+		return ImGuiKey_2;
+		break;
+	case 51:
+		return ImGuiKey_3;
+		break;
+	case 52:
+		return ImGuiKey_4;
+		break;
+	case 53:
+		return ImGuiKey_5;
+		break;
+	case 54:
+		return ImGuiKey_6;
+		break;
+	case 55:
+		return ImGuiKey_7;
+		break;
+	case 56:
+		return ImGuiKey_8;
+		break;
+	case 57:
+		return ImGuiKey_9;
+		break;
+	case 259:
+		return ImGuiKey_Backspace;
+		break;
+	case 256:
+		return ImGuiKey_Escape;
+		break;
+	case 46:
+		return ImGuiKey_Period;
+		break;
+	default:
+		return ImGuiKey_0;
+		break;
+	}
+}
 void keyCBWrapper(GLFWwindow* window, int key, int scancode, int action, int mod) {
 	ImGuiIO& io = ImGui::GetIO();
-	io.AddKeyEvent(ImGuiKey(key), action);
+	io.AddKeyEvent(glfwToImguiKey(key), action);
 	if (!io.WantCaptureKeyboard) {
 		Engine* engine = (Engine*)glfwGetWindowUserPointer(window);
 		if (action != 2) {

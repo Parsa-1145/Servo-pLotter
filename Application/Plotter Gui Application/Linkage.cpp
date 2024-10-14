@@ -204,4 +204,13 @@ void LinkageNS::LinkageState::render(){
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 	glDepthMask(GL_TRUE);
 
+	ImGui::Begin("Machine config");
+	ImGui::Text("Speed:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##speed", ImGuiDataType_Float, &this->linkage->speed, 0, 0, "%.2f", 0);
+	ImGui::Text("Delay:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##delay", ImGuiDataType_U16, &this->linkage->delay);
+	ImGui::Button("Upload machine config");
+	ImGui::End();
 }

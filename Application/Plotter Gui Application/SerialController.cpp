@@ -97,7 +97,7 @@ void SerialControllerNS::Idle::render() {
 	}
 	ImGui::Text("Baud rate:");
 	ImGui::PushItemWidth(-1);
-	ImGui::InputScalar("##baud rate", ImGuiDataType_U16, &this->serialController->baudRate);
+	ImGui::InputScalar("##baud rate", ImGuiDataType_U32, &this->serialController->baudRate);
 	ImGui::PushItemWidth(-1);
 	if (ImGui::Button("Connect / disconnect")) {
 		if (!this->serialController->connected) {

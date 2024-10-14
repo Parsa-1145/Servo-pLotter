@@ -42,7 +42,8 @@ namespace LinkageNS {
 		unsigned int textureId;
 		mat4 worldPosMat;
 		std::vector<vec3> boundingBoxVertices;
-		float speed = 12000;
+		float speed = 0.05;
+		unsigned int delay = 3;
 
 		Linkage(Engine* engine, PlotterApp* plotterApp, Arm* arm1, Arm* arm2);
 		void moveTo(vec2 position);
