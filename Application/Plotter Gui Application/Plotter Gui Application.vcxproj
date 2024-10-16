@@ -138,6 +138,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="DataController.h" />
     <ClInclude Include="Dependencies\imgui\imconfig.h" />
     <ClInclude Include="Dependencies\imgui\imgui.h" />
     <ClInclude Include="Dependencies\imgui\imgui_impl_glfw.h" />
@@ -164,6 +166,7 @@
     <ClInclude Include="PolyLine.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="SceneController.h" />
+    <ClInclude Include="ScrollingVector.h" />
     <ClInclude Include="selectionRect.h" />
     <ClInclude Include="SerialController.h" />
     <ClInclude Include="ShaderController.h" />
@@ -176,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common.cpp" />
+    <ClCompile Include="DataController.cpp" />
     <ClCompile Include="Dependencies\glad.c" />
     <ClCompile Include="Dependencies\imgui\imgui.cpp" />
     <ClCompile Include="Dependencies\imgui\imgui_demo.cpp" />
@@ -200,6 +204,7 @@
     <ClCompile Include="PolyLine.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="SceneController.cpp" />
+    <ClCompile Include="ScrollingVector.cpp" />
     <ClCompile Include="selectionRect.cpp" />
     <ClCompile Include="SerialController.cpp" />
     <ClCompile Include="ShaderController.cpp" />

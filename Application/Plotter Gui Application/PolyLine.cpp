@@ -25,6 +25,20 @@ SVGElements::PolyLine::PolyLine::PolyLine(Engine* engine, PlotterApp* plotterApp
 						0, 0, 0, 1 };
 }
 
+SVGElements::PolyLine::PolyLine::~PolyLine(){
+	cout << "asd" << endl;
+	this->renderCon.disconnect();
+	this->updateCon.disconnect();
+	this->resizeCon.disconnect();
+	this->keyCon.disconnect();
+	this->cursorCon.disconnect();
+	this->mouseBtnCon.disconnect();
+	this->scrollCon.disconnect();
+	glDeleteBuffers(1, &this->vbo);
+	delete this->idle;
+	delete this->selected;
+}
+
 void SVGElements::PolyLine::PolyLine::initVbo(){
 	this->engine->locker.lock();
 	glGenBuffers(1, &this->vbo);
@@ -105,10 +119,13 @@ bool SVGElements::PolyLine::PolyLine::isInBox(vec2 xRange, vec2 yRange){
 	}
 	return false;
 }
-std::string SVGElements::PolyLine::PolyLine::getMachineCode(){
-	std::string code = "";
+void SVGElements::PolyLine::PolyLine::remove(){
+	this->~PolyLine();
+}
+std::vector<std::string> SVGElements::PolyLine::PolyLine::getMachineCode(){
+	std::vector<std::string> code;
 	for (vec3 v : this->vertices) {
-		code += "M\n" + std::to_string(this->worldPosition[0] + v[0]) + '\n' + std::to_string(this->worldPosition[1] + v[1]) + '\n';
+		code.push_back("M\n" + std::to_string(this->worldPosition[0] + v[0]) + '\n' + std::to_string(this->worldPosition[1] + v[1]) + '\n');
 	}
 	return code;
 }

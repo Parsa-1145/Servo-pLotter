@@ -18,32 +18,41 @@ template<class T> class ObjectBase {
 public:
 	T* curState;
 	StateBase** constantStatePtr;
+	boost::signals2::scoped_connection mouseBtnCon;
+	boost::signals2::scoped_connection keyCon;
+	boost::signals2::scoped_connection scrollCon;
+	boost::signals2::scoped_connection cursorCon;
+	boost::signals2::scoped_connection updateCon;
+	boost::signals2::scoped_connection resizeCon;
+	boost::signals2::scoped_connection renderCon;
+
+
 
 	Engine* engine;
 
 	void initCallbacks() {
 		this->constantStatePtr = (StateBase**)(&this->curState);
 
-		this->engine->updater.mouseBtnSignal.connect([this]() {
+		this->mouseBtnCon = this->engine->updater.mouseBtnSignal.connect([this]() {
 			//cout << this->engine->updater.eventList[0]->mouseBtnPress.action << endl;
 			(*this->constantStatePtr)->mouseButtonCB(this->engine->updater.eventList[0]);
 			});
-		this->engine->updater.keyPressSignal.connect([this]() {
+		this->keyCon = this->engine->updater.keyPressSignal.connect([this]() {
 			(*this->constantStatePtr)->keyboardCB(this->engine->updater.eventList[0]);
 			});
-		this->engine->updater.scrollSignal.connect([this]() {
+		this->scrollCon = this->engine->updater.scrollSignal.connect([this]() {
 			(*this->constantStatePtr)->scrollCB(this->engine->updater.eventList[0]);
 			});
-		this->engine->updater.cursorMoveSignal.connect([this]() {
+		this->cursorCon = this->engine->updater.cursorMoveSignal.connect([this]() {
 			(*this->constantStatePtr)->cursorPosCB(this->engine->updater.eventList[0]);
 			});
-		this->engine->updater.windowResizeSignal.connect([this]() {
+		this->resizeCon = this->engine->updater.windowResizeSignal.connect([this]() {
 			(*this->constantStatePtr)->windowResizeCB(this->engine->updater.eventList[0]);
 			});
-		this->engine->updater.updateSignal.connect([this]() {
+		this->updateCon = this->engine->updater.updateSignal.connect([this]() {
 			(*this->constantStatePtr)->update(this->engine->updater.deltaTime);
 			});
-		this->engine->renderer.renderSignal.connect([this]() {
+		this->renderCon = this->engine->renderer.renderSignal.connect([this]() {
 			(*this->constantStatePtr)->render();
 			});
 	}

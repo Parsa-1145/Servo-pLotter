@@ -19,7 +19,6 @@ using SVGControllerNS::SVGController;
 using LinkageNS::Linkage;
 using SelectionRectNS::SelectionRect;
 using SceneControllerNS::SceneController;
-using SerialControllerNS::SerialController;
 
 class PlotterApp {
 public:
@@ -35,7 +34,6 @@ public:
 
 	SVGController* svgController;
 	SceneController* sceneController;
-	SerialController* serialController;
 
 	PlotterApp(Engine* engine);
 	~PlotterApp();

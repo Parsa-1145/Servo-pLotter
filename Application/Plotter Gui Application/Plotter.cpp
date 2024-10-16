@@ -21,7 +21,7 @@ PlotterApp::PlotterApp(Engine* engine){
 	this->svgController = new SVGController(engine, this);
 	this->selectionRect = new SelectionRect(engine, this);
 	this->sceneController = new SceneController(engine, this);
-	this->serialController = new SerialController(engine, this, 19200);
+	serialController.init(engine, this, 115200);
 }
 
 PlotterApp::~PlotterApp(){

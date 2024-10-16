@@ -7,6 +7,9 @@ namespace SceneControllerNS {
 	class State :public StateBase {
 	public:
 		SceneController* sceneController;
+		void render() override;
+	private:
+		char buffer[10];
 	};
 	class Idle :public State {
 	public:

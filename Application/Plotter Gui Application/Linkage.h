@@ -45,9 +45,21 @@ namespace LinkageNS {
 		float speed = 0.05;
 		unsigned int delay = 3;
 
+		float propoGain = 15;
+		float integGain = 0;
+		float derivGain = 30;
+		float offset = 0;
+		float velSmooth = 0;
+
+		bool canSendPos = true;
+
+		std::queue<std::string> machineCode;
+		std::mutex machineCodeMutex;
+
 		Linkage(Engine* engine, PlotterApp* plotterApp, Arm* arm1, Arm* arm2);
 		void moveTo(vec2 position);
 		void prepareMachineCode();
+		void prepareMchineCode(SVGElementBase* element);
 
 	private:
 		void initVbo();

@@ -3,6 +3,8 @@
 #include "Arm.h"
 #include "SceneController.h"
 #include "SerialController.h"
+#include "DataController.h"
+#include "Globals.h"
 
 LinkageNS::Linkage::Linkage(Engine* engine, PlotterApp* plotterApp, Arm* arm1, Arm* arm2){
 	this->engine = engine;
@@ -52,11 +54,20 @@ void LinkageNS::Linkage::moveTo(vec2 position){
 	}
 }
 void LinkageNS::Linkage::prepareMachineCode(){
-	std::string machinCode = "";
 	for (SVGElementBase* e : this->plotterApp->sceneController->svgElementList) {
-		machinCode += e->getMachineCode();
+		machineCodeMutex.lock();
+		for (std::string str : e->getMachineCode()) {
+			this->machineCode.push(str);
+		}
+		machineCodeMutex.unlock();
 	}
-	this->plotterApp->serialController->executeCode(machinCode);
+}
+void LinkageNS::Linkage::prepareMchineCode(SVGElementBase* element){
+	machineCodeMutex.lock();
+	for (std::string str : element->getMachineCode()) {
+		this->machineCode.push(str);
+	}
+	machineCodeMutex.unlock();
 }
 void LinkageNS::Linkage::initVbo(){
 	vec2 uvs[4] = { {0, 1}, {1, 1}, { 1, 0}, {0, 0} };
@@ -147,7 +158,7 @@ void LinkageNS::Linkage::initValidArea(){
 void LinkageNS::Idle::keyboardCB(InputState* state) {
 
 	if (state->keyPressed(GLFW_KEY_A)) {
-		this->linkage->excuting->init();
+		this->linkage->prepareMachineCode();
 		this->linkage->curState = this->linkage->excuting;
 	}
 	else if (state->keyPressed(GLFW_KEY_M)) {
@@ -175,18 +186,16 @@ void LinkageNS::Executing::init() {
 	}
 }
 void LinkageNS::Executing::update(float deltaTime) {
-	moveData data = this->linkage->plotterApp->sceneController->svgElementList[this->curElementIndex]->moveOnShape(this->linkage->speed * (deltaTime / 1000));
-	
-	this->linkage->moveTo(data.position);
-	
-	if (data.finished) {
-		this->curElementIndex += 1;
-		if (this->linkage->plotterApp->sceneController->svgElementList.size() == this->curElementIndex) {
-			this->curElementIndex = 0;
-			this->linkage->curState = this->linkage->idle;
+	if (this->linkage->canSendPos) {
+		if (this->linkage->machineCode.size() != 0) {
+			this->linkage->machineCodeMutex.lock();
+			serialController.messageQueue.push(this->linkage->machineCode.front());
+			this->linkage->machineCode.pop();
+			this->linkage->canSendPos = false;
+			this->linkage->machineCodeMutex.unlock();
 		}
 		else {
-			this->linkage->plotterApp->sceneController->svgElementList[this->curElementIndex]->initExecution();
+			this->linkage->curState = this->linkage->idle;
 		}
 	}
 }
@@ -211,6 +220,62 @@ void LinkageNS::LinkageState::render(){
 	ImGui::Text("Delay:");
 	ImGui::PushItemWidth(-1);
 	ImGui::InputScalar("##delay", ImGuiDataType_U16, &this->linkage->delay);
-	ImGui::Button("Upload machine config");
+	if (ImGui::Button("Upload machine config")) {
+		serialOutMutex.lock();
+		serialController.messageQueue.push("c\n");
+		serialController.messageQueue.push(std::to_string(1) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->speed) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->delay) + '\n');
+		serialController.messageQueue.push("end\n");
+		serialOutMutex.unlock();
+	}
+	ImGui::End();
+
+	ImGui::Begin("Incoming data");
+	if (ImPlot::BeginPlot("##Scrolling", ImVec2(-1, -1))) {
+		ImPlot::SetupAxes("Time", "Value", 0, 0);
+		dataInputMutex.lock();
+		ImPlot::SetNextFillStyle(IMPLOT_AUTO_COL, 0.5f);
+		for (int i = 0; i < dataController.datas.size(); i++) {
+			ImPlot::PlotLine(dataController.datas[i].label.c_str(),
+				&dataController.datas[i].scrVec.data[0].x, &dataController.datas[i].scrVec.data[0].y,
+				dataController.datas[i].scrVec.data.size(), 0, dataController.datas[i].scrVec.pointer, 2 * sizeof(float));
+		}
+		dataInputMutex.unlock();
+		ImPlot::EndPlot();
+	}
+	ImGui::End();
+	ImGui::Begin("Motor config");
+	ImGui::Text("Proportional Gain:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##Proportional gain", ImGuiDataType_Float, &this->linkage->propoGain, NULL, NULL, "%.2f");
+	ImGui::Text("Integral Gain:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##Integral gain", ImGuiDataType_Float, &this->linkage->integGain, NULL, NULL, "%.2f");
+	ImGui::Text("Derivative Gain:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##Derivative gain", ImGuiDataType_Float, &this->linkage->derivGain, NULL, NULL, "%.2f");
+	ImGui::Text("Velocity smoothing factor:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##vel smooth", ImGuiDataType_Float, &this->linkage->velSmooth, NULL, NULL, "%.2f");
+	if (this->linkage->velSmooth > 1) this->linkage->velSmooth = 1;
+	if (this->linkage->velSmooth < 0) this->linkage->velSmooth = 0;
+	ImGui::Text("offset:");
+	ImGui::PushItemWidth(-1);
+	ImGui::InputScalar("##offset", ImGuiDataType_Float, &this->linkage->offset, NULL, NULL, "%.2f");
+	ImGui::PushItemWidth(-1);
+	ImGui::PushItemWidth(-1);
+	if (ImGui::Button("Upload motor config")) {
+		serialOutMutex.lock();
+		serialController.messageQueue.push("c\n");
+		serialController.messageQueue.push(std::to_string(0) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->propoGain) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->derivGain) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->integGain) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->offset) + '\n');
+		serialController.messageQueue.push(std::to_string(this->linkage->velSmooth) + '\n');
+		serialController.messageQueue.push("end\n");
+		serialOutMutex.unlock();
+	}
 	ImGui::End();
 }

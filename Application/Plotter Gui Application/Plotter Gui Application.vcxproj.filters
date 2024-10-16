@@ -152,6 +152,15 @@
     <ClInclude Include="Globals.h">
       <Filter>Plotter\Header Files\Objects</Filter>
     </ClInclude>
+    <ClInclude Include="DataController.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollingVector.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Plotter\Header Files\Objects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arm.cpp">
@@ -248,6 +257,12 @@
       <Filter>Plotter\Source Files\Objects</Filter>
     </ClCompile>
     <ClCompile Include="Globals.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="DataController.cpp">
+      <Filter>Plotter\Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollingVector.cpp">
       <Filter>Plotter\Source Files\Objects</Filter>
     </ClCompile>
   </ItemGroup>

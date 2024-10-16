@@ -37,6 +37,7 @@ namespace SVGElements {
 			unsigned int vbo;
 
 			PolyLine(Engine* engine, PlotterApp* plotterApp, std::vector<vec3>* vertices);
+			~PolyLine();
 			void initVbo();
 			void updateModelMat();
 			moveData moveOnShape(float moveDistance) override;
@@ -46,7 +47,8 @@ namespace SVGElements {
 			void deselect() override;
 			vec3 getHoveringVertexPosition() override;
 			bool isInBox(vec2 xRange, vec2 yRange);
-			std::string getMachineCode();
+			void remove() override;
+			std::vector<std::string> getMachineCode();
 		};
 	}
 }

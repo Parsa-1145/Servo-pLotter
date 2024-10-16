@@ -2,11 +2,12 @@
 #include "Plotter.h"
 #include "BaseClasses.h"
 #include <serial/serial.h>
+
 namespace SerialControllerNS {
 	class SerialController;
 	class State : public StateBase {
 	public:
-		SerialController* serialController;
+		SerialController* con;
 	};
 	class Idle : public State {
 	public:
@@ -26,15 +27,23 @@ namespace SerialControllerNS {
 
 		char inChar;
 		std::string inStr;
+		std::string strBuffer[10];
+		float floatBuffer[10];
 
-		int state;
+		std::chrono::time_point<std::chrono::high_resolution_clock> conStartTime;
+		float curTime;
+		
 
-		SerialController(Engine* engine, PlotterApp* plotterApp, int baud);
+		int state[10];
+
 		~SerialController();
 
+		void init(Engine* engine, PlotterApp* plotterApp, int baud);
 		void update();
 		void executeCode(std::string code);
+		void execute();
 		void parse(std::string str);
 		void sendMessages();
 	};
 }
+extern SerialControllerNS::SerialController serialController;

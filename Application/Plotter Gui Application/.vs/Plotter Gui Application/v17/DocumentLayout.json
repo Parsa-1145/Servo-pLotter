@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SerialController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SceneController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SceneController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SerialController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SceneController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SceneController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Linkage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -35,12 +19,92 @@
       "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Linkage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\PolyLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:PolyLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\PolyLine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:PolyLine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGElementBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SVGElementBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\BaseClasses.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:BaseClasses.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Plotter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Plotter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\PROJECTS\\WHOLE\\SERVO-PLOTTER\\APPLICATION\\PLOTTER GUI APPLICATION\\DEPENDENCIES\\INCLUDE\\BOOST\\FUNCTION\\FUNCTION_TEMPLATE.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:DEPENDENCIES\\INCLUDE\\BOOST\\FUNCTION\\FUNCTION_TEMPLATE.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\PROJECTS\\WHOLE\\SERVO-PLOTTER\\APPLICATION\\PLOTTER GUI APPLICATION\\DEPENDENCIES\\INCLUDE\\BOOST\\SIGNALS2\\DETAIL\\VARIADIC_SLOT_INVOKER.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:DEPENDENCIES\\INCLUDE\\BOOST\\SIGNALS2\\DETAIL\\VARIADIC_SLOT_INVOKER.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\PROJECTS\\WHOLE\\SERVO-PLOTTER\\APPLICATION\\PLOTTER GUI APPLICATION\\DEPENDENCIES\\INCLUDE\\BOOST\\ITERATOR\\ITERATOR_FACADE.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:DEPENDENCIES\\INCLUDE\\BOOST\\ITERATOR\\ITERATOR_FACADE.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\PROJECTS\\WHOLE\\SERVO-PLOTTER\\APPLICATION\\PLOTTER GUI APPLICATION\\DEPENDENCIES\\INCLUDE\\BOOST\\SIGNALS2\\DETAIL\\SLOT_CALL_ITERATOR.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:DEPENDENCIES\\INCLUDE\\BOOST\\SIGNALS2\\DETAIL\\SLOT_CALL_ITERATOR.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SerialController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SerialController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SVGController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:SVGController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Plotter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Plotter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\DataController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:DataController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B18C9FFC-CDFB-4DE8-9A2B-21DE960BF906}|Plotter Gui Application.vcxproj|solutionrelative:Data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,34 +114,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SerialController.h",
-              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.h",
-              "RelativeDocumentMoniker": "SerialController.h",
-              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.h",
-              "RelativeToolTip": "SerialController.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-12T19:22:12.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Common.h",
-              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Common.h",
-              "RelativeDocumentMoniker": "Common.h",
-              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Common.h",
-              "RelativeToolTip": "Common.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T22:27:07.36Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -96,103 +134,333 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Globals.cpp",
-              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.cpp",
-              "RelativeDocumentMoniker": "Globals.cpp",
-              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.cpp",
-              "RelativeToolTip": "Globals.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "DocumentIndex": 13,
+              "Title": "iterator_facade.hpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\iterator\\iterator_facade.hpp",
+              "RelativeDocumentMoniker": "Dependencies\\Include\\boost\\iterator\\iterator_facade.hpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\iterator\\iterator_facade.hpp",
+              "RelativeToolTip": "Dependencies\\Include\\boost\\iterator\\iterator_facade.hpp",
+              "ViewState": "AQIAAGwCAAAAAAAAAAAewHcCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T10:16:19.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "slot_call_iterator.hpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\signals2\\detail\\slot_call_iterator.hpp",
+              "RelativeDocumentMoniker": "Dependencies\\Include\\boost\\signals2\\detail\\slot_call_iterator.hpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\signals2\\detail\\slot_call_iterator.hpp",
+              "RelativeToolTip": "Dependencies\\Include\\boost\\signals2\\detail\\slot_call_iterator.hpp",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAewGsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T10:16:18.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "variadic_slot_invoker.hpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\signals2\\detail\\variadic_slot_invoker.hpp",
+              "RelativeDocumentMoniker": "Dependencies\\Include\\boost\\signals2\\detail\\variadic_slot_invoker.hpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\signals2\\detail\\variadic_slot_invoker.hpp",
+              "RelativeToolTip": "Dependencies\\Include\\boost\\signals2\\detail\\variadic_slot_invoker.hpp",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAewHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T10:16:17.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "function_template.hpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\function\\function_template.hpp",
+              "RelativeDocumentMoniker": "Dependencies\\Include\\boost\\function\\function_template.hpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Dependencies\\Include\\boost\\function\\function_template.hpp",
+              "RelativeToolTip": "Dependencies\\Include\\boost\\function\\function_template.hpp",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAewGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T10:16:15.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SVGController.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGController.h",
+              "RelativeDocumentMoniker": "SVGController.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGController.h",
+              "RelativeToolTip": "SVGController.h",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T09:48:01.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SVGController.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGController.cpp",
+              "RelativeDocumentMoniker": "SVGController.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGController.cpp",
+              "RelativeToolTip": "SVGController.cpp",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAHUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-14T22:14:32.395Z",
+              "WhenOpened": "2024-10-16T09:47:59.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SceneController.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SceneController.h",
+              "RelativeDocumentMoniker": "SceneController.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SceneController.h",
+              "RelativeToolTip": "SceneController.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-16T09:41:39.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SceneController.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SceneController.cpp",
+              "RelativeDocumentMoniker": "SceneController.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SceneController.cpp",
+              "RelativeToolTip": "SceneController.cpp",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-16T09:41:37.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PolyLine.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\PolyLine.cpp",
+              "RelativeDocumentMoniker": "PolyLine.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\PolyLine.cpp",
+              "RelativeToolTip": "PolyLine.cpp",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-15T22:19:16.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "PolyLine.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\PolyLine.h",
+              "RelativeDocumentMoniker": "PolyLine.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\PolyLine.h",
+              "RelativeToolTip": "PolyLine.h",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-15T22:19:09.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SVGElementBase.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGElementBase.h",
+              "RelativeDocumentMoniker": "SVGElementBase.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SVGElementBase.h",
+              "RelativeToolTip": "SVGElementBase.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-15T22:18:34.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Camera.cpp",
+              "RelativeDocumentMoniker": "Camera.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Camera.cpp",
+              "RelativeToolTip": "Camera.cpp",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAEcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-15T21:53:02.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Plotter.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Plotter.cpp",
+              "RelativeDocumentMoniker": "Plotter.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Plotter.cpp",
+              "RelativeToolTip": "Plotter.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-15T17:51:33.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseClasses.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\BaseClasses.h",
+              "RelativeDocumentMoniker": "BaseClasses.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\BaseClasses.h",
+              "RelativeToolTip": "BaseClasses.h",
+              "ViewState": "AQIAACwAAAAAAAAAAAAewDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-15T13:18:10.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Data.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Data.h",
+              "RelativeDocumentMoniker": "Data.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Data.h",
+              "RelativeToolTip": "Data.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-15T12:33:44.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DataController.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\DataController.cpp",
+              "RelativeDocumentMoniker": "DataController.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\DataController.cpp",
+              "RelativeToolTip": "DataController.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-15T12:32:50.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SerialController.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.cpp",
+              "RelativeDocumentMoniker": "SerialController.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.cpp",
+              "RelativeToolTip": "SerialController.cpp",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAAJsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T20:08:06.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SerialController.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.h",
+              "RelativeDocumentMoniker": "SerialController.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.h",
+              "RelativeToolTip": "SerialController.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-12T19:22:12.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Common.h",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Common.h",
+              "RelativeDocumentMoniker": "Common.h",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Common.h",
+              "RelativeToolTip": "Common.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-14T22:27:07.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Globals.cpp",
+              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.cpp",
+              "RelativeDocumentMoniker": "Globals.cpp",
+              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.cpp",
+              "RelativeToolTip": "Globals.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-14T22:14:32.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Globals.h",
               "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.h",
               "RelativeDocumentMoniker": "Globals.h",
               "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Globals.h",
               "RelativeToolTip": "Globals.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T22:13:37.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T22:13:37.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Linkage.h",
               "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Linkage.h",
               "RelativeDocumentMoniker": "Linkage.h",
               "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Linkage.h",
               "RelativeToolTip": "Linkage.h",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAAZAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAD0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-13T20:57:20.19Z"
+              "WhenOpened": "2024-10-13T20:57:20.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Linkage.cpp",
               "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Linkage.cpp",
               "RelativeDocumentMoniker": "Linkage.cpp",
               "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Linkage.cpp",
               "RelativeToolTip": "Linkage.cpp",
-              "ViewState": "AQIAAMAAAAAAAAAAAAAAANUAAAAoAAAA",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-13T20:49:38.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Engine.cpp",
               "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Engine.cpp",
               "RelativeDocumentMoniker": "Engine.cpp",
               "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Engine.cpp",
               "RelativeToolTip": "Engine.cpp",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwCgAAAAZAAAA",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAswK0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-12T20:38:59.887Z"
+              "WhenOpened": "2024-10-12T20:38:59.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Renderer.cpp",
               "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Renderer.cpp",
               "RelativeDocumentMoniker": "Renderer.cpp",
               "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Renderer.cpp",
               "RelativeToolTip": "Renderer.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAewBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-12T20:33:42.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Plotter.h",
               "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Plotter.h",
               "RelativeDocumentMoniker": "Plotter.h",
               "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\Plotter.h",
               "RelativeToolTip": "Plotter.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-12T20:17:35.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SerialController.cpp",
-              "DocumentMoniker": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.cpp",
-              "RelativeDocumentMoniker": "SerialController.cpp",
-              "ToolTip": "D:\\Projects\\Whole\\Servo-pLotter\\Application\\Plotter Gui Application\\SerialController.cpp",
-              "RelativeToolTip": "SerialController.cpp",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAswF4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-12T20:08:06.781Z",
+              "WhenOpened": "2024-10-12T20:17:35.896Z",
               "EditorCaption": ""
             }
           ]

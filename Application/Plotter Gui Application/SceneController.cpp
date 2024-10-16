@@ -1,6 +1,7 @@
 #include "SceneController.h"
 #include "Camera.h"
 #include "Grid.h"
+#include "Linkage.h"
 
 SceneControllerNS::SceneController::SceneController(Engine* engine, PlotterApp* plotterApp) {
 	this->plotterApp = plotterApp;
@@ -97,4 +98,40 @@ void SceneControllerNS::Moving::cursorPosCB(InputState* state) {
 		e->translate((worldPos - this->prevWorldPos));
 	}
 	this->prevWorldPos = worldPos;
+}
+
+void SceneControllerNS::State::render(){
+	ImGui::Begin("Objects");
+		for (int i = 0; i < this->sceneController->svgElementList.size(); i++) {
+			ImGui::PushID(i);
+			sprintf_s(buffer, "%d", i);
+			ImGui::SetNextItemAllowOverlap();
+			if (ImGui::Selectable(buffer, this->sceneController->isSelected(this->sceneController->svgElementList[i]))) {
+				if (this->sceneController->isSelected(this->sceneController->svgElementList[i])) {
+					this->sceneController->svgElementList[i]->deselect();
+				}
+				else {
+					this->sceneController->svgElementList[i]->select();
+				}
+			}
+			ImGui::SameLine();
+			if (ImGui::Button("Delete")) {
+				if (this->sceneController->isSelected(this->sceneController->svgElementList[i])) {
+					this->sceneController->svgElementList[i]->deselect();
+				}
+				this->sceneController->svgElementList[i]->remove();
+				this->sceneController->svgElementList.erase(this->sceneController->svgElementList.begin() + i);
+			}
+			ImGui::SameLine();
+			if (ImGui::Button("Draw")) {
+				this->sceneController->plotterApp->linkage->prepareMchineCode(this->sceneController->svgElementList[i]);
+				this->sceneController->plotterApp->linkage->curState = this->sceneController->plotterApp->linkage->excuting;
+			}
+			ImGui::SameLine();
+			ImGui::Button("up");
+			ImGui::SameLine();
+			ImGui::Button("down");
+			ImGui::PopID();
+		}
+	ImGui::End();
 }

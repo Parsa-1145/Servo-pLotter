@@ -17,7 +17,8 @@ public:
 	virtual void deselect() = 0;
 	virtual vec3 getHoveringVertexPosition() = 0;
 	virtual bool isInBox(vec2 xRange, vec2 yRange) = 0;
-	virtual std::string getMachineCode() = 0;
+	virtual std::vector<std::string> getMachineCode() = 0;
+	virtual void remove() = 0;
 
 	bool isHovered = false;
 	int hoveredVertexIndex = -1;
